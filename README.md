@@ -19,7 +19,7 @@ Aplikasi ini memungkinkan pengguna untuk mengendalikan proyek **dot matrix** sec
 - **Mode Gelap/Terang**: Pilih antara mode gelap dan terang sesuai preferensi.
 - **Notifikasi Waktu**: Kirim pesan ke topik MQTT setiap beberapa detik selama countdown, memberikan peringatan waktu.
 
-## 🚀 Instalasi
+## Instalasi
 
 Untuk menjalankan aplikasi ini, Anda memerlukan:
 
