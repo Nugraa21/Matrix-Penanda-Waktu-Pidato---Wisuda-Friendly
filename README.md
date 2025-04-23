@@ -33,16 +33,16 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini:
    git clone https://github.com/username/repo-name.git
    cd repo-name
     ```
-## Install dependensi dengan:
+2.  Install dependensi dengan:
+   
+   ```
+   flutter pub get
+   ```
+3. Jalankan aplikasi dengan:
 
-```
-flutter pub get
-```
-Jalankan aplikasi dengan:
-
-```
-flutter run
-```
+   ```
+   flutter run
+   ```
 
 # 🎯 Tujuan Proyek
 Proyek ini bertujuan untuk membantu panitia wisuda atau pembawa acara dalam:
