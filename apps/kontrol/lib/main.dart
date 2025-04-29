@@ -143,7 +143,7 @@ class _MatrixControlPageState extends State<MatrixControlPage> {
     _sendMessage('mulai');
     setState(() {
       isCounting = true;
-      countdown = 300;
+      countdown = 420;
     });
 
     _timer?.cancel();

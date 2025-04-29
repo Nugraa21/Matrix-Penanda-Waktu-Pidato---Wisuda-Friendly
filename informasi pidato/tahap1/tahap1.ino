@@ -11,6 +11,10 @@
 #define CLK_PIN 33
 #define CS_PIN 25
 
+// Buzer
+#define BUZZER_PIN 27
+
+
 const char* mqtt_server = "broker.emqx.io";
 
 WiFiClient espClient;
@@ -19,7 +23,9 @@ MD_Parola matrix = MD_Parola(HARDWARE_TYPE, DATA_PIN, CLK_PIN, CS_PIN, MAX_DEVIC
 
 unsigned long startTime = 0;
 bool countdownActive = false;
-int countdownSeconds = 300;
+// int countdownSeconds = 300;
+int countdownSeconds = 420;
+
 
 bool warned2min = false;
 bool warned1min = false;
@@ -90,6 +96,7 @@ void reconnect() {
 }
 
 void setup() {
+  
   Serial.begin(115200);
   Serial.println("Memulai setup...");
 
@@ -135,12 +142,12 @@ void loop() {
     } 
     else if (remaining <= 60 && !warned1min) {
       warned1min = true;
-      tampilkanScroll("Sebentar lagi selesai");
+      tampilkanScroll("Sisa 1 Menit lagi");
       Serial.println("Peringatan: 1 menit tersisa");
     } 
     else if (remaining <= 120 && !warned2min) {
       warned2min = true;
-      tampilkanScroll("Waktunya akan habis");
+      tampilkanScroll("Sisa 2 Menit lagi");
       Serial.println("Peringatan: 2 menit tersisa");
     } 
     else {
